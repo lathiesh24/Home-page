@@ -1,0 +1,109 @@
+{
+  "header": {
+    "brandName": "Aksh's Magic",
+    "brandLogo": "https://via.placeholder.com/150x50",
+    "navmenu": [
+      {
+        "label": "Home",
+        "desc": "Go to homepage",
+        "url": "/home",
+        "children": [
+          { "label": "About", "desc": "Learn more about us", "url": "/about" },
+          { "label": "Services", "desc": "What we offer", "url": "/services" },
+          { "label": "Blogs", "desc": "What we can share", "url": "/blogs" }
+        ]
+      }
+    ],
+    "cta": {
+      "label": "Get In Touch",
+      "url": "/contact",
+      "desc": "Reach out to us for inquiries"
+    }
+  },
+  "footer": {
+    "sitemap": [
+      { "label": "Privacy Policy", "url": "/privacy" },
+      { "label": "Terms of Service", "url": "/terms" }
+    ],
+    "socialmedia": [
+      { "platform": "Twitter", "url": "https://twitter.com/ABCTech" },
+      { "platform": "LinkedIn", "url": "https://linkedin.com/company/abctech" }
+    ]
+  },
+  "pages": {
+    "home": {
+      "sections": [
+        {
+          "name": "Hero",
+          "id": "sec_hero_123456",
+          "type": "hero",
+          "heading": "Welcome to Aksh's Magic",
+          "caption": "Innovative solutions to elevate your business.",
+          "description": "Explore our offerings and let us help you grow.",
+          "cta": {
+            "label": "Learn More",
+            "url": "/learn-more",
+            "desc": "Find out more about our services"
+          },
+          "imageUrl": "https://via.placeholder.com/1200x600"
+        },
+        {
+          "name": "Services",
+          "id": "sec_services_987654",
+          "type": "general",
+          "heading": "Our Services",
+          "caption": "What We Do",
+          "description": "We provide a range of technology solutions to cater to your business needs.",
+          "cta": {
+            "label": "Explore Services",
+            "url": "/services",
+            "desc": "View details about our service offerings"
+          },
+          "imageUrl": "https://via.placeholder.com/800x400"
+        },
+        {
+          "name": "About Us",
+          "id": "sec_about_112233",
+          "type": "general",
+          "heading": "Who We Are",
+          "caption": "Our journey and mission",
+          "description": "Founded in 2010, we have helped countless businesses achieve their technology goals.",
+          "cta": {
+            "label": "Read Our Story",
+            "url": "/about",
+            "desc": "Discover how we started and what drives us"
+          },
+          "imageUrl": "https://via.placeholder.com/800x400"
+        },
+        {
+          "name": "Testimonials",
+          "id": "sec_testimonials_223344",
+          "type": "general",
+          "heading": "What Our Clients Say",
+          "caption": "Client feedback",
+          "description": "See how our services have impacted our clients.",
+          "cta": {
+            "label": "View Testimonials",
+            "url": "/testimonials",
+            "desc": "Read client feedback and success stories"
+          },
+          "imageUrl": "https://via.placeholder.com/800x400"
+        },
+        {
+          "name": "Contact",
+          "id": "sec_contact_445566",
+          "type": "general",
+          "heading": "Get In Touch",
+          "caption": "We're here to help",
+          "description": "Reach out to us anytime for inquiries or assistance.",
+          "cta": {
+            "label": "Contact Us",
+            "url": "/contact",
+            "desc": "Fill out the form to reach us"
+          },
+          "imageUrl": "https://via.placeholder.com/800x400"
+        }
+      ]
+    }
+  }
+}
