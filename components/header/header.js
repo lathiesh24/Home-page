@@ -1,6 +1,7 @@
 class HeaderComponent extends HTMLElement {
   constructor() {
     super();
+    this.attachShadow({ mode: "open" });
   }
 
   set data(value) {
@@ -52,7 +53,6 @@ class HeaderComponent extends HTMLElement {
           color: #ddd;
         }
 
-        /* Dropdown styles */
         .dropdown {
           display: none;
           position: absolute;
