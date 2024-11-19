@@ -1,0 +1,104 @@
+{
+  "servicesPage": {
+    "title": "Our Services",
+    "description": "Explore our wide range of services designed to meet your needs and exceed your expectations.",
+    "services": [
+      {
+        "id": "web-development",
+        "title": "Web Development",
+        "icon": "file2.jpg",
+        "description": "Build fast, secure, and scalable web applications tailored to your business goals.",
+        "features": [
+          "Custom Website Design",
+          "Responsive Web Development",
+          "E-commerce Solutions",
+          "CMS Integration"
+        ]
+      },
+      {
+        "id": "mobile-app-development",
+        "title": "Mobile App Development",
+        "icon": "file.jpg",
+        "description": "Create innovative and user-friendly mobile applications for Android and iOS platforms.",
+        "features": [
+          "Cross-Platform Apps",
+          "Native App Development",
+          "App Store Optimization",
+          "Ongoing Maintenance"
+        ]
+      },
+      {
+        "id": "digital-marketing",
+        "title": "Digital Marketing",
+        "icon": "file3.jpg",
+        "description": "Boost your online presence and engage with your audience through strategic digital marketing.",
+        "features": [
+          "SEO Optimization",
+          "Social Media Marketing",
+          "Pay-Per-Click Advertising",
+          "Content Marketing"
+        ]
+      },
+      {
+        "id": "ui-ux-design",
+        "title": "UI/UX Design",
+        "icon": "file4.jpg",
+        "description": "Design intuitive and visually appealing interfaces that enhance user experiences.",
+        "features": [
+          "Wireframing & Prototyping",
+          "User Research",
+          "Interaction Design",
+          "Usability Testing"
+        ]
+      },
+      {
+        "id": "cloud-solutions",
+        "title": "Cloud Solutions",
+        "icon": "file.jpg",
+        "description": "Leverage cloud computing to increase efficiency and scalability for your business.",
+        "features": [
+          "Cloud Migration",
+          "Data Storage Solutions",
+          "Cloud-Native Development",
+          "Disaster Recovery"
+        ]
+      },
+      {
+        "id": "digital-marketing",
+        "title": "Digital Marketing",
+        "icon": "file3.jpg",
+        "description": "Boost your online presence and engage with your audience through strategic digital marketing.",
+        "features": [
+          "SEO Optimization",
+          "Social Media Marketing",
+          "Pay-Per-Click Advertising",
+          "Content Marketing"
+        ]
+      },
+      {
+        "id": "web-development",
+        "title": "Web Development",
+        "icon": "file2.jpg",
+        "description": "Build fast, secure, and scalable web applications tailored to your business goals.",
+        "features": [
+          "Custom Website Design",
+          "Responsive Web Development",
+          "E-commerce Solutions",
+          "CMS Integration"
+        ]
+      },
+      {
+        "id": "mobile-app-development",
+        "title": "Mobile App Development",
+        "icon": "file.jpg",
+        "description": "Create innovative and user-friendly mobile applications for Android and iOS platforms.",
+        "features": [
+          "Cross-Platform Apps",
+          "Native App Development",
+          "App Store Optimization",
+          "Ongoing Maintenance"
+        ]
+      }
+    ]
+  }
+}

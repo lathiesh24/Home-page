@@ -1,31 +1,39 @@
 class HeaderComponent extends HTMLElement {
   constructor() {
     super();
-    this.attachShadow({ mode: "open" });
+    this.toggleMenu = this.toggleMenu.bind(this);
+  }
+
+  toggleMenu() {
+    const navMenu = this.querySelector(".nav-menu");
+    navMenu.classList.toggle("active");
   }
 
   set data(value) {
-    this.innerHTML = this.render(value);
-  }
-
-  render(data) {
-    return `
+    this.innerHTML = `
       <style>
         .header {
+          position: absolute; 
+          top: 0;
+          left: 0;
+          width: 93%;
           display: flex;
           align-items: center;
           justify-content: space-between;
           padding: 1em 2em;
-          background-color: #333;
           color: white;
+          z-index: 10; 
+          flex-wrap: wrap; 
         }
 
         .header img {
           height: 50px;
+          width: 50px;
+          border-radius: 50px;
         }
 
         .header h1 {
-          font-size: 1.5em;
+          font-size: 1.2em;
           margin: 0;
           font-weight: bold;
         }
@@ -36,10 +44,7 @@ class HeaderComponent extends HTMLElement {
           gap: 1.5em;
           margin: 0;
           padding: 0;
-        }
-
-        nav ul > li {
-          position: relative;
+          align-items: center;
         }
 
         nav a {
@@ -53,38 +58,8 @@ class HeaderComponent extends HTMLElement {
           color: #ddd;
         }
 
-        .dropdown {
-          display: none;
-          position: absolute;
-          top: 100%;
-          left: 0;
-          background-color: #444;
-          padding: 0.5em 0;
-          border-radius: 5px;
-          min-width: 150px;
-          z-index: 1000;
-        }
-
-        .dropdown li {
-          display: block;
-        }
-
-        .dropdown a {
-          display: block;
-          padding: 0.5em 1em;
-          color: white;
-        }
-
-        .dropdown a:hover {
-          background-color: #555;
-        }
-
-        nav ul > li:hover .dropdown {
-          display: block;
-        }
-
         .cta-button {
-          background-color: #007bff;
+          background-color: #f0842f;
           color: white;
           padding: 0.5em 1em;
           text-decoration: none;
@@ -95,41 +70,102 @@ class HeaderComponent extends HTMLElement {
         .cta-button:hover {
           background-color: #0056b3;
         }
+
+        /* Hamburger icon */
+        .hamburger {
+          display: none;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 30px;
+          height: 20px;
+          cursor: pointer;
+        }
+
+        .hamburger div {
+          width: 30px;
+          height: 3px;
+          background-color: white;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+          .header {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 1em;
+          }
+
+          nav ul {
+            flex-direction: column;
+            gap: 0.5em;
+            width: 100%;
+            text-align: left;
+            padding-top: 1em;
+            display: none; /* Hide menu by default */
+          }
+
+          .nav-menu.active {
+            display: block; /* Show menu when active */
+          }
+
+          .cta-button {
+            width: 20%;
+            text-align: center;
+            margin-top: 1em;
+          }
+
+          .header img {
+            margin-bottom: 1em;
+          }
+
+          /* Show hamburger icon */
+          .hamburger {
+            display: flex;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .header img {
+            height: 30px;
+                        width: 20%;
+
+            width: 80px;
+          }
+
+          .header h1 {
+            font-size: 1.0em;
+          }
+
+          .cta-button {
+            font-size: 0.9em;
+            padding: 0.4em 0.8em;
+
+          }
+        }
       </style>
       <div class="header">
-        <img src="${data.brandLogo}" alt="${data.brandName} Logo" />
-        <h1>${data.brandName}</h1>
+
+        <img src="${value.brandLogo}" alt="${value.brandName} Logo" />
+        <h1>${value.brandName}</h1>
         <nav>
-          <ul>
-            ${data.navmenu
-              .map(
-                (menu) => `
-              <li>
-                <a href="${menu.url}" title="${menu.desc}">${menu.label}</a>
-                ${
-                  menu.children
-                    ? `
-                  <ul class="dropdown">
-                    ${menu.children
-                      .map(
-                        (child) => `
-                      <li><a href="${child.url}" title="${child.desc}">${child.label}</a></li>
-                    `
-                      )
-                      .join("")}
-                  </ul>
-                `
-                    : ""
-                }
-              </li>
-            `
-              )
+          <ul class="nav-menu">
+            ${value.navmenu
+              .map((menu) => {
+                return `<li><a href="${menu.url}" title="${menu.desc}">${menu.label}</a></li>`;
+              })
               .join("")}
           </ul>
         </nav>
-        <a href="${data.cta.url}" title="${data.cta.desc}" class="cta-button">${
-      data.cta.label
-    }</a>
+        <a href="${value.cta.url}" title="${
+      value.cta.desc
+    }" class="cta-button">${value.cta.label}</a>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="${this.toggleMenu}">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
       </div>
     `;
   }

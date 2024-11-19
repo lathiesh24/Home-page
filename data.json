@@ -1,18 +1,11 @@
 {
   "header": {
     "brandName": "Aksh's Magic",
-    "brandLogo": "https://via.placeholder.com/150x50",
+    "brandLogo": "k3.png",
     "navmenu": [
-      {
-        "label": "Home",
-        "desc": "Go to homepage",
-        "url": "/home",
-        "children": [
-          { "label": "About", "desc": "Learn more about us", "url": "/about" },
-          { "label": "Services", "desc": "What we offer", "url": "/services" },
-          { "label": "Blogs", "desc": "What we can share", "url": "/blogs" }
-        ]
-      }
+      { "label": "About", "desc": "Learn more about us", "url": "/about" },
+      { "label": "Services", "desc": "What we offer", "url": "/services" },
+      { "label": "Blogs", "desc": "What we can share", "url": "/blogs" }
     ],
     "cta": {
       "label": "Get In Touch",
@@ -59,7 +52,7 @@
             "url": "/services",
             "desc": "View details about our service offerings"
           },
-          "imageUrl": "https://via.placeholder.com/800x400"
+          "imageUrl": "file.jpg"
         },
         {
           "name": "About Us",
@@ -73,7 +66,7 @@
             "url": "/about",
             "desc": "Discover how we started and what drives us"
           },
-          "imageUrl": "https://via.placeholder.com/800x400"
+          "imageUrl": "file2.jpg"
         },
         {
           "name": "Testimonials",
@@ -87,7 +80,7 @@
             "url": "/testimonials",
             "desc": "Read client feedback and success stories"
           },
-          "imageUrl": "https://via.placeholder.com/800x400"
+          "imageUrl": "file3.jpg"
         },
         {
           "name": "Contact",
@@ -101,7 +94,7 @@
             "url": "/contact",
             "desc": "Fill out the form to reach us"
           },
-          "imageUrl": "https://via.placeholder.com/800x400"
+          "imageUrl": "file4.jpg"
         }
       ]
     }

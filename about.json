@@ -1,0 +1,52 @@
+{
+  "aboutPage": {
+    "title": "About Us",
+    "description": "We are dedicated to delivering exceptional services and creating innovative solutions that make a difference.",
+    "sections": [
+      {
+        "id": "mission",
+        "title": "Our Mission",
+        "content": "To empower individuals and organizations by providing exceptional solutions that drive success and innovation.The prominent candidates in the second phase are Chief Minister Hemant Soren, who is contesting from the Barhait constituency, his wife Kalapana Soren from Gandey, and his brother Basant Soren from Dumka; BJP State president Babulal Marandi from Dhanwar; Leader of Opposition in the Jharkhand Assembly, Amar Kumar Bauri of the BJP, from Chandankiyari; Shibu Soren’s daughter-in-law Sita Soren from Jamtara; and All Jharkhand Students Union (AJSU) president Sudhesh Mahato from Silli."
+      },
+      {
+        "id": "vision",
+        "title": "Our Vision",
+        "content": "To be a global leader in delivering sustainable and innovative solutions that transform the way we live and work.The prominent candidates in the second phase are Chief Minister Hemant Soren, who is contesting from the Barhait constituency, his wife Kalapana Soren from Gandey, and his brother Basant Soren from Dumka; BJP State president Babulal Marandi from Dhanwar; Leader of Opposition in the Jharkhand Assembly, Amar Kumar Bauri of the BJP, from Chandankiyari; Shibu Soren’s daughter-in-law Sita Soren from Jamtara; and All Jharkhand Students Union (AJSU) president Sudhesh Mahato from Silli."
+      },
+      {
+        "id": "team",
+        "title": "Meet Our Team",
+        "members": [
+          {
+            "name": "John Doe",
+            "position": "CEO",
+            "image": "file.jpg",
+            "bio": "John is a visionary leader with over 20 years of experience in the industry."
+          },
+          {
+            "name": "Jane Smith",
+            "position": "CTO",
+            "image": "file2.jpg",
+            "bio": "Jane is passionate about technology and innovation, driving our technical strategy."
+          },
+          {
+            "name": "Michael Brown",
+            "position": "Head of Marketing",
+            "image": "file3.jpg",
+            "bio": "Michael leads our marketing efforts with a focus on creativity and impact."
+          }
+        ]
+      },
+      {
+        "id": "contact",
+        "title": "Contact Us",
+        "info": {
+          "email": "contact@company.com",
+          "phone": "+123 456 7890",
+          "address": "123 Main Street, Anytown, USA",
+          "map": "https://maps.google.com/?q=123+Main+Street+Anytown+USA"
+        }
+      }
+    ]
+  }
+}
