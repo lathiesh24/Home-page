@@ -27,7 +27,8 @@ class BlogsSection extends HTMLElement {
             padding: 20px;
             font-family: Arial, sans-serif;
           }
-  
+  *{
+          padding-top: 60px;}
           .description {
             text-align: center;
             font-size: 1.2em;

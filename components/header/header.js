@@ -12,16 +12,19 @@ class HeaderComponent extends HTMLElement {
   set data(value) {
     this.innerHTML = `
       <style>
+      *{
+      color:black;}
         .header {
           position: absolute; 
           top: 0;
           left: 0;
           width: 93%;
+          height: 20px;
           display: flex;
           align-items: center;
           justify-content: space-between;
           padding: 1em 2em;
-          color: white;
+          color: black;
           z-index: 10; 
           flex-wrap: wrap; 
         }
@@ -48,7 +51,7 @@ class HeaderComponent extends HTMLElement {
         }
 
         nav a {
-          color: white;
+          color: black;
           text-decoration: none;
           font-size: 1em;
           padding: 0.5em;
@@ -148,7 +151,7 @@ class HeaderComponent extends HTMLElement {
         <img src="${value.brandLogo}" alt="${value.brandName} Logo" />
         <h1>${value.brandName}</h1>
         <nav>
-          <ul class="nav-menu">
+          <ul class="nav-menu" onclick="route(event)">
             ${value.navmenu
               .map((menu) => {
                 return `<li><a href="${menu.url}" title="${menu.desc}">${menu.label}</a></li>`;

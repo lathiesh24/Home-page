@@ -24,10 +24,11 @@ class ServicesSection extends HTMLElement {
         <style>
           :host {
             display: block;
-            padding: 20px;
+            padding-top: 60px;
             font-family: Arial, sans-serif;
           }
-  
+.main{
+padding-top: 60px;}
           .description {
             text-align: center;
             font-size: 1.2em;
@@ -57,9 +58,6 @@ class ServicesSection extends HTMLElement {
   background: linear-gradient(to right, #fae9ec, white, #f7cbd4); 
           }
 
-
-
-
           .service-icon {
             width: 100%;
             height: 200px;
@@ -88,7 +86,8 @@ class ServicesSection extends HTMLElement {
       `;
 
     const content = `
-        <p class="description">${description}</p>
+    <div class="main">
+     <p class="description">${description}</p>
         <div class="services-grid">
           ${services
             .map(
@@ -110,7 +109,8 @@ class ServicesSection extends HTMLElement {
             `
             )
             .join("")}
-        </div>
+        </div></div>
+       
       `;
 
     this.shadowRoot.innerHTML = `${styles}${content}`;

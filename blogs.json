@@ -8,7 +8,7 @@
         "title": "The Future of Web Development",
         "author": "John Doe",
         "date": "2024-11-01",
-        "image": "file.jpg",
+        "image": "images/file.jpg",
         "summary": "Explore the latest trends and technologies shaping the future of web development.",
         "contentUrl": "/blogs/future-of-web-development"
       },
@@ -17,7 +17,7 @@
         "title": "Top 10 Tips for Digital Marketing Success",
         "author": "Jane Smith",
         "date": "2024-10-15",
-        "image": "file4.jpg",
+        "image": "images/file2.jpg",
         "summary": "Learn how to create effective digital marketing campaigns with our top 10 tips.",
         "contentUrl": "/blogs/digital-marketing-tips"
       },
@@ -26,7 +26,7 @@
         "title": "How to Build Scalable Mobile Applications",
         "author": "Michael Brown",
         "date": "2024-10-01",
-        "image": "file3.jpg",
+        "image": "images/file3.jpg",
         "summary": "Discover best practices for building mobile applications that scale effortlessly.",
         "contentUrl": "/blogs/scalable-mobile-apps"
       },
@@ -35,7 +35,7 @@
         "title": "Understanding Cloud Computing for Businesses",
         "author": "Emily Davis",
         "date": "2024-09-20",
-        "image": "file2.jpg",
+        "image": "images/file2.jpg",
         "summary": "A beginner's guide to understanding the benefits of cloud computing for businesses.",
         "contentUrl": "/blogs/cloud-computing"
       },
@@ -44,7 +44,7 @@
         "title": "Why UI/UX Design Matters in 2024",
         "author": "Chris Wilson",
         "date": "2024-09-10",
-        "image": "file.jpg",
+        "image": "images/file.jpg",
         "summary": "Learn how great UI/UX design can impact user engagement and satisfaction.",
         "contentUrl": "/blogs/ui-ux-design"
       }

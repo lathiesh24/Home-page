@@ -6,7 +6,7 @@
       {
         "id": "web-development",
         "title": "Web Development",
-        "icon": "file2.jpg",
+        "icon": "images/file2.jpg",
         "description": "Build fast, secure, and scalable web applications tailored to your business goals.",
         "features": [
           "Custom Website Design",
@@ -18,7 +18,7 @@
       {
         "id": "mobile-app-development",
         "title": "Mobile App Development",
-        "icon": "file.jpg",
+        "icon": "images/file.jpg",
         "description": "Create innovative and user-friendly mobile applications for Android and iOS platforms.",
         "features": [
           "Cross-Platform Apps",
@@ -30,7 +30,7 @@
       {
         "id": "digital-marketing",
         "title": "Digital Marketing",
-        "icon": "file3.jpg",
+        "icon": "images/file3.jpg",
         "description": "Boost your online presence and engage with your audience through strategic digital marketing.",
         "features": [
           "SEO Optimization",
@@ -42,7 +42,7 @@
       {
         "id": "ui-ux-design",
         "title": "UI/UX Design",
-        "icon": "file4.jpg",
+        "icon": "images/file4.jpg",
         "description": "Design intuitive and visually appealing interfaces that enhance user experiences.",
         "features": [
           "Wireframing & Prototyping",
@@ -54,7 +54,7 @@
       {
         "id": "cloud-solutions",
         "title": "Cloud Solutions",
-        "icon": "file.jpg",
+        "icon": "images/file.jpg",
         "description": "Leverage cloud computing to increase efficiency and scalability for your business.",
         "features": [
           "Cloud Migration",
@@ -66,7 +66,7 @@
       {
         "id": "digital-marketing",
         "title": "Digital Marketing",
-        "icon": "file3.jpg",
+        "icon": "images/file3.jpg",
         "description": "Boost your online presence and engage with your audience through strategic digital marketing.",
         "features": [
           "SEO Optimization",
@@ -78,7 +78,7 @@
       {
         "id": "web-development",
         "title": "Web Development",
-        "icon": "file2.jpg",
+        "icon": "images/file2.jpg",
         "description": "Build fast, secure, and scalable web applications tailored to your business goals.",
         "features": [
           "Custom Website Design",
@@ -90,7 +90,7 @@
       {
         "id": "mobile-app-development",
         "title": "Mobile App Development",
-        "icon": "file.jpg",
+        "icon": "images/file.jpg",
         "description": "Create innovative and user-friendly mobile applications for Android and iOS platforms.",
         "features": [
           "Cross-Platform Apps",

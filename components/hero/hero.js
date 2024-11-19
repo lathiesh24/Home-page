@@ -30,7 +30,7 @@ class HeroSection extends HTMLElement {
         .hero-section {
           width: 97%;
           height: 100vh;
-          background-image: url('rose-petals.png');
+          background-image: url('images/rose-petals.png');
           background-size: cover;
           background-position: center;
           display: flex;

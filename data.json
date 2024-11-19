@@ -1,9 +1,13 @@
 {
   "header": {
     "brandName": "Aksh's Magic",
-    "brandLogo": "k3.png",
+    "brandLogo": "images/k3.png",
     "navmenu": [
-      { "label": "About", "desc": "Learn more about us", "url": "/about" },
+      {
+        "label": "About",
+        "desc": "Learn more about us",
+        "url": "/about"
+      },
       { "label": "Services", "desc": "What we offer", "url": "/services" },
       { "label": "Blogs", "desc": "What we can share", "url": "/blogs" }
     ],
@@ -52,7 +56,7 @@
             "url": "/services",
             "desc": "View details about our service offerings"
           },
-          "imageUrl": "file.jpg"
+          "imageUrl": "images/file.jpg"
         },
         {
           "name": "About Us",
@@ -66,7 +70,7 @@
             "url": "/about",
             "desc": "Discover how we started and what drives us"
           },
-          "imageUrl": "file2.jpg"
+          "imageUrl": "images/file2.jpg"
         },
         {
           "name": "Testimonials",
@@ -80,7 +84,7 @@
             "url": "/testimonials",
             "desc": "Read client feedback and success stories"
           },
-          "imageUrl": "file3.jpg"
+          "imageUrl": "images/file3.jpg"
         },
         {
           "name": "Contact",
@@ -94,7 +98,7 @@
             "url": "/contact",
             "desc": "Fill out the form to reach us"
           },
-          "imageUrl": "file4.jpg"
+          "imageUrl": "images/file4.jpg"
         }
       ]
     }

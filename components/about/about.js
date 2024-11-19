@@ -66,7 +66,8 @@ class AboutUs extends HTMLElement {
       * {
         box-sizing: border-box;
         margin: 0;
-        padding: 0;
+        padding-top: 40px;
+
       }
       .about-container {
         font-family: Arial, sans-serif;

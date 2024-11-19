@@ -7,6 +7,8 @@ const route = (event) => {
 
 const routes = {
   "/about": "/components/about/about.html",
+  "/services": "/components/services/services.html",
+  "/blogs": "/components/blogs/blogs.html",
 };
 
 const handleLocation = async () => {

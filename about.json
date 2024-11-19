@@ -20,19 +20,19 @@
           {
             "name": "John Doe",
             "position": "CEO",
-            "image": "file.jpg",
+            "image": "images/file.jpg",
             "bio": "John is a visionary leader with over 20 years of experience in the industry."
           },
           {
             "name": "Jane Smith",
             "position": "CTO",
-            "image": "file2.jpg",
+            "image": "images/file2.jpg",
             "bio": "Jane is passionate about technology and innovation, driving our technical strategy."
           },
           {
             "name": "Michael Brown",
             "position": "Head of Marketing",
-            "image": "file3.jpg",
+            "image": "images/file3.jpg",
             "bio": "Michael leads our marketing efforts with a focus on creativity and impact."
           }
         ]
