@@ -37,7 +37,7 @@ class Sections extends HTMLElement {
         main {
           display: flex;
           flex-direction: column;
-          gap: 20px;
+          gap: 2px;
           padding: 20px;
           font-family: Arial, sans-serif;
         }
