@@ -28,7 +28,7 @@ class FooterComponent extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <style>
         footer {
-          background: #d42589;
+          background: linear-gradient(135deg, #8e0e00, #d42589, #ff7e5f);          
           color: #fff;
           padding: 20px;
           text-align: center;

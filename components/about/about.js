@@ -20,7 +20,7 @@ class AboutUs extends HTMLElement {
       if (section.id === "team") {
         const membersHTML = section.members
           .map(
-            (member) => `
+            (member) => ` 
               <div class="team-member">
                 <img src="${member.image}" alt="${member.name}" />
                 <h3>${member.name}</h3>
@@ -30,16 +30,17 @@ class AboutUs extends HTMLElement {
             `
           )
           .join("");
-        return `
+        return ` 
             <div class="section" id="${section.id}">
               <h2>${section.title}</h2>
               <div class="team-members">${membersHTML}</div>
             </div>
           `;
       } else if (section.id === "contact") {
-        return `
-            <div class="section" id="${section.id}">
-              <h2>${section.title}</h2>
+        return ` 
+          <div class="section" id="${section.id}">
+            <h2>${section.title}</h2>
+            <div class="contact-container">
               <div class="contact-info">
                 <p>Email: <a href="mailto:${section.info.email}">${section.info.email}</a></p>
                 <p>Phone: <a href="tel:${section.info.phone}">${section.info.phone}</a></p>
@@ -47,12 +48,15 @@ class AboutUs extends HTMLElement {
                 <p><a href="${section.info.map}" target="_blank">View on Map</a></p>
               </div>
               <div class="mapouter">
-               <div style="width: 100%"><iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Graftohttps://www.google.com/maps/place/Coimbatore,+Tamil+Nadu/@11.0139689,76.967235,12z/data=!3m1!4b1!4m6!3m5!1s0x3ba859af2f971cb5:0x2fc1c81e183ed282!8m2!3d11.0168445!4d76.9558321!16zL20vMDE5ZmM0?entry=ttu&amp;g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%253D%253Dn%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps systems</a></iframe></div>
+                <iframe width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Graftohttps://www.google.com/maps/place/Coimbatore,+Tamil+Nadu/@11.0139689,76.967235,12z/data=!3m1!4b1!4m6!3m5!1s0x3ba859af2f971cb5:0x2fc1c81e183ed282!8m2!3d11.0168445!4d76.9558321!16zL20vMDE5ZmM0?entry=ttu&amp;g_ep=EgoyMDI0MTExMy4xIKXMDSoASAFQAw%253D%253Dn%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
               </div>
             </div>
-          `;
+          </div>
+        `;
       } else {
-        return `
+        return ` 
             <div class="section" id="${section.id}">
               <h2>${section.title}</h2>
               <p>${section.content}</p>
@@ -66,8 +70,7 @@ class AboutUs extends HTMLElement {
       * {
         box-sizing: border-box;
         margin: 0;
-        padding-top: 40px;
-
+        padding: 0;
       }
       .about-container {
         font-family: Arial, sans-serif;
@@ -137,13 +140,30 @@ class AboutUs extends HTMLElement {
         color: #555;
         text-align: center;
       }
-      .contact-info {
-        font-size: 1rem;
-        color: #444;
-        padding: 20px;
+      .contact-container {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        flex-wrap: wrap;
       }
-      .contact-info p {
-        margin-bottom: 10px;
+      .contact-info {
+        flex: 1;
+        padding: 15px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .mapouter {
+        flex: 1;
+        padding: 15px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .mapouter iframe {
+        width: 100%;
+        border: none;
+        border-radius: 8px;
       }
       .contact-info a {
         color: #007BFF;
@@ -151,19 +171,6 @@ class AboutUs extends HTMLElement {
       }
       .contact-info a:hover {
         text-decoration: underline;
-      }
-      .mapouter {
-        position: relative;
-        text-align: center;
-        width: 100%;
-        height: 300px;
-        margin-top: 20px;
-      }
-      .gmap_canvas {
-        overflow: hidden;
-        background: none !important;
-        width: 100%;
-        height: 100%;
       }
     </style>
     <div class="about-container">

@@ -27,8 +27,9 @@ class BlogsSection extends HTMLElement {
             padding: 20px;
             font-family: Arial, sans-serif;
           }
-  *{
-          padding-top: 60px;}
+          .main{
+          padding-top: 40px;
+          }
           .description {
             text-align: center;
             font-size: 1.2em;
@@ -99,6 +100,7 @@ class BlogsSection extends HTMLElement {
       `;
 
     const content = `
+    <div class="main">
         <p class="description">${description}</p>
         <div class="blogs-grid">
           ${blogs
@@ -118,6 +120,7 @@ class BlogsSection extends HTMLElement {
             `
             )
             .join("")}
+        </div>
         </div>
       `;
 
